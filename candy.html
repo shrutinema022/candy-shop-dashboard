@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Candy Shop Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Candy Shop Dashboard</h1>
+    </header>
+    <section id="product-list">
+        <h2>Product List</h2>
+        <ul id="products"></ul>
+    </section>
+    <section id="sales-info">
+        <h2>Sales Information</h2>
+        <p>Total Sales: <span id="total-sales">$0.00</span></p>
+    </section>
+    <section id="order-form">
+        <h2>Place an Order</h2>
+        <form id="order-form">
+            <label for="product-select">Select Candy:</label>
+            <select id="product-select"></select>
+            <label for="quantity-input">Quantity:</label>
+            <input type="number" id="quantity-input" min="1" value="1">
+            <button type="button" onclick="addToCart()">Add to Cart</button>
+        </form>
+    </section>
+    <section id="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button type="button" onclick="checkout()">Checkout</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
